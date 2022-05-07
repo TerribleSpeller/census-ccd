@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10",
+    "fast-xml-parser": "^4.0.7",
+    "http-server": "^14.1.0",
+    "jsdom": "^19.0.0",
+    "puppeteer": "^13.7.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "xml2js": "^0.4.23"
+  },
+  "name": "001-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
