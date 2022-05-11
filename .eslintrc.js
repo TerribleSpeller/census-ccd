@@ -23,6 +23,8 @@ module.exports = {
     'no-unused-vars': ['error'],
 
     'semi': ['error'],
+
+    'quote-props': ['error', 'consistent-as-needed'],
   },
   overrides: [],
 };
