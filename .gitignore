@@ -23,3 +23,6 @@ yarn-error.log*
 # IDE-specific files
 /.idea
 /.vscode
+
+# runtime generated files
+/cache
