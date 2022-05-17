@@ -1,5 +1,8 @@
 const { getFullRegionCensus } = require('./services/fetchers/region');
 const CensusScale = require('./const/census');
+const { schedule } = require('./services/processes/redo');
+const { getNationGDP } = require('./services/processes/redo');
+
 
 /**
  * @typedef {{ name: string; censusScores: Map<number, number> }} Nation
@@ -32,6 +35,9 @@ const getCensusScaleData = async (scale) => {
   });
 };
 
+let endResult = []
+let queryNum = 0
+
 const main = async () => {
   await Promise.all(scales.map(getCensusScaleData));
 
@@ -41,8 +47,18 @@ const main = async () => {
   );
 
   console.log(qualifiedNations);
+  const numofqualifiedNations = Object.keys(qualifiedNations).length;
 
   // @TODO: process further
+
+  for (let i = 0; i < numofqualifiedNations; i++ )  {
+    console.log(`Query #${i} is  ${qualifiedNations[i].name}`);
+    let nationAddress = qualifiedNations[i].name;
+    let resultingData = await schedule(getNationGDP(nationAddress, 76));
+    endResult.push(resultingData);
+  }
+
+
 };
 
 module.exports = { main };
