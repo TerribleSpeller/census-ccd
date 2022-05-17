@@ -50,13 +50,24 @@ const main = async () => {
   const numofqualifiedNations = Object.keys(qualifiedNations).length;
 
   // @TODO: process further
-
+  let CCDGDP = 0;
   for (let i = 0; i < numofqualifiedNations; i++ )  {
     console.log(`Query #${i} is  ${qualifiedNations[i].name}`);
-    let nationAddress = qualifiedNations[i].name;
-    let resultingData = await schedule(getNationGDP(nationAddress, 76));
-    endResult.push(resultingData);
+    let tempVar = qualifiedNations[i].censusScores.get(CensusScale.EconomicOutput);
+    //let nationAddress = qualifiedNations[i].name;
+    if (typeof(tempVar) === Number ) {
+      CCDGDP += tempVar;
+    } else {
+      let temptempVar = Number(tempVar);
+      CCDGDP += temptempVar;
+    }
+    console.log(tempVar);
+    //endResult.push(resultingData);
   }
+
+  console.log(`The Real Confederation GDP is ${CCDGDP} Flammas.`);
+  let perMemberState = CCDGDP/numofqualifiedNations
+  console.log(`Average Real GDP per Confederation Member States is ${perMemberState} Flammas.`)
 
 
 };
