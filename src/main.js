@@ -1,7 +1,6 @@
 const { getFullRegionCensus } = require('./services/fetchers/region');
 const CensusScale = require('./const/census');
-const { schedule } = require('./services/processes/redo');
-const { getNationGDP } = require('./services/processes/redo');
+
 
 
 /**
@@ -35,9 +34,6 @@ const getCensusScaleData = async (scale) => {
   });
 };
 
-let endResult = []
-let queryNum = 0
-
 const main = async () => {
   await Promise.all(scales.map(getCensusScaleData));
 
@@ -51,6 +47,8 @@ const main = async () => {
 
   // @TODO: process further
   let CCDGDP = 0;
+
+  
   for (let i = 0; i < numofqualifiedNations; i++ )  {
     console.log(`Query #${i} is  ${qualifiedNations[i].name}`);
     let tempVar = qualifiedNations[i].censusScores.get(CensusScale.EconomicOutput);
@@ -69,6 +67,13 @@ const main = async () => {
   let perMemberState = CCDGDP/numofqualifiedNations
   console.log(`Average Real GDP per Confederation Member States is ${perMemberState} Flammas.`)
 
+  /*
+  console.log(`Dev note, qualifiedNations is a ${typeof(qualifiedNations)}`); => Object
+  console.log(qualifiedNations[0].name); Note you have to add an index or not it can't find what it wants
+  console.log(qualifiedNations[0].censusScores);
+  console.log(qualifiedNations[0].censusScores.get(80)); .get(key) is how to access Maps 
+  */
+  
 
 };
 

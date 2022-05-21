@@ -15,6 +15,7 @@ const schedule = async (func) => {
   return func;
 };
 
+/*
 const getNationGDP = async (nationName, wantedCensus) => {
   let result = {
     Name : nationName,
@@ -38,5 +39,6 @@ const getNationGDP = async (nationName, wantedCensus) => {
   console.log(result);
   return result;
 };
+*/
 
-module.exports = { schedule, getNationGDP }
+module.exports = { schedule }
