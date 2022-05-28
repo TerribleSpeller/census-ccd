@@ -1,5 +1,6 @@
 const { getFullRegionCensus } = require('./services/fetchers/region');
 const CensusScale = require('./const/census');
+const fs = require('fs');
 
 
 
@@ -73,8 +74,23 @@ const main = async () => {
   console.log(qualifiedNations[0].censusScores);
   console.log(qualifiedNations[0].censusScores.get(80)); .get(key) is how to access Maps 
   */
-  
 
+  //The Below converts the Data into a Easily Transported Format of a .txt file
+  let textArray = [];
+  for (let i = 0; i < numofqualifiedNations; i++ ) {
+    let nation = {
+      name: qualifiedNations[i].name,
+      censusScores: Object.fromEntries(qualifiedNations[i].censusScores)
+    }
+
+    textArray.push(nation);
+  }
+
+  console.log(textArray);
+
+  fs.writeFile(`./cache/CCDData-${new Date()}.txt`, JSON.stringify(textArray), (err) => {
+    // In case of a error throw err.
+    if (err) throw err});
 };
 
 module.exports = { main };
