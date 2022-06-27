@@ -1,19 +1,20 @@
 //Nations along with what industries want to be checked
-const CensusScale = require('./const/census');
+const CensusScale = require('./census');
+const axios = require('axios');
+const fs = require('fs');
 
-const minelegotipony = ['minelegotipony', CensusScale.Economy, '26'];
-const minelegotiaandequestria = ['minelegotia and equestria', CensusScale.Economy, '13'];
-const aeioux = ['aeioux', CensusScale.Economy, '13', '16', '21', '24'];
-const ridnez = ['ridnez', CensusScale.Economy, '10', '16', '22', '13', '17', '19'];
-const tdvp = ['the very dark place', CensusScale.Economy, '16', '26', '13', '22', '23'];
-const sal = ['salcanceacy', CensusScale.Economy, '16', '20', '11'];
-const deman = ['deman kalan', CensusScale.Economy, '16'];
-const joco = ['jocospor', CensusScale.Economy, '20', '18'];
-const nde = ['new daul eryx', CensusScale.Economy, '16'];
-const giu = ['golden impirial utopia', CensusScale.Economy, '16', '13', '26'];
-const dix = ['the dixie confederate union', CensusScale.Economy, '16'];
-const fet = ['fetra', CensusScale.Economy, '10', '16'];
-const joh = ['johill', CensusScale.Economy, '13'];
+const minelegotipony = ['minelegotipony', CensusScale.Economy, CensusScale.SectorManufacturing];
+const minelegotiaandequestria = ['minelegotia and equestria', CensusScale.Economy, CensusScale.IndustryInformationTechnology];
+const aeioux = ['aeioux', CensusScale.Economy, CensusScale.IndustryInformationTechnology, CensusScale.IndustryArmsManufacturing, CensusScale.IndustryInsurance, CensusScale.IndustryBookPublishing];
+const ridnez = ['ridnez', CensusScale.Economy, CensusScale.IndustryAutomobileManufacturing, CensusScale.IndustryArmsManufacturing, CensusScale.IndustryFurnitureRestoration, CensusScale.IndustryInformationTechnology, CensusScale.SectorAgriculture, CensusScale.IndustryTimberWoodchipping];
+const tdvp = ['the very dark place', CensusScale.Economy, CensusScale.IndustryArmsManufacturing, CensusScale.SectorManufacturing, CensusScale.IndustryInformationTechnology, CensusScale.IndustryFurnitureRestoration, CensusScale.IndustryRetail];
+const sal = ['salcanceacy', CensusScale.Economy, CensusScale.IndustryArmsManufacturing, CensusScale.IndustryMining, CensusScale.IndustryCheeseExports];
+const deman = ['deman kalan', CensusScale.Economy, CensusScale.IndustryArmsManufacturing];
+const joco = ['jocospor', CensusScale.Economy, CensusScale.IndustryMining, CensusScale.IndustryBeverageSales];
+const nde = ['new daul eryx', CensusScale.Economy, CensusScale.IndustryArmsManufacturing];
+const giu = ['golden impirial utopia', CensusScale.Economy, CensusScale.IndustryArmsManufacturing, CensusScale.IndustryInformationTechnology, CensusScale.SectorManufacturing];
+const dix = ['the dixie confederate union', CensusScale.Economy, CensusScale.IndustryArmsManufacturing];
+const fet = ['fetra', CensusScale.Economy, CensusScale.IndustryAutomobileManufacturing, CensusScale.IndustryArmsManufacturing];
 
 const nationCensusId = [
   minelegotipony,
@@ -28,7 +29,6 @@ const nationCensusId = [
   giu,
   dix,
   fet,
-  joh,
 ];
 
 module.exports = {
@@ -44,9 +44,6 @@ module.exports = {
   giu,
   dix,
   fet,
-  joh,
   nationCensusId,
 };
 
-//console.log(nationNameList[0]);
-//console.log(nationCensusId["minelegotipony"]);

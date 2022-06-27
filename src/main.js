@@ -1,6 +1,8 @@
 const { getFullRegionCensus } = require('./services/fetchers/region');
 const CensusScale = require('./const/census');
 const fs = require('fs');
+const nationCensusId = require('./const/nations');
+const { default: axios } = require('axios');
 
 
 
@@ -13,7 +15,32 @@ const nations = new Map();
 const region = 'confederation_of_corrupt_dictators';
 
 /** @type {CensusScale[]} */
-const scales = [CensusScale.Residency, CensusScale.EconomicOutput, CensusScale.Economy];
+const scales = [CensusScale.Residency, 
+  CensusScale.EconomicOutput, 
+  CensusScale.Economy, 
+  CensusScale.EconomicFreedom, 
+  CensusScale.Employment, 
+  CensusScale.Population, 
+  /* 
+  CensusScale.IndustryAutomobileManufacturing, 
+  CensusScale.IndustryCheeseExports, 
+  CensusScale.IndustryBasketWeaving, 
+  CensusScale.IndustryInformationTechnology,
+  CensusScale.IndustryPizzaDelivery, 
+  CensusScale.IndustryTroutFishing, 
+  CensusScale.IndustryArmsManufacturing, 
+  CensusScale.SectorAgriculture, 
+  CensusScale.IndustryBeverageSales, 
+  CensusScale.IndustryTimberWoodchipping, 
+  CensusScale.IndustryMining, 
+  CensusScale.IndustryInsurance, 
+  CensusScale.IndustryFurnitureRestoration, 
+  CensusScale.IndustryRetail, 
+  CensusScale.IndustryBookPublishing, 
+  CensusScale.IndustryGambling, 
+  CensusScale.SectorManufacturing
+*/];
+  
 
 /** @param {CensusScale} scale */
 const getCensusScaleData = async (scale) => {
@@ -82,7 +109,6 @@ const main = async () => {
       name: qualifiedNations[i].name,
       censusScores: Object.fromEntries(qualifiedNations[i].censusScores)
     }
-
     textArray.push(nation);
   }
 
@@ -92,5 +118,7 @@ const main = async () => {
     // In case of a error throw err.
     if (err) throw err});
 };
+
+
 
 module.exports = { main };
