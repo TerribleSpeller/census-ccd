@@ -1,0 +1,476 @@
+[
+	{
+		"date": "2022-06-29",
+		"RegionEcoStat": 79.19304527,
+		"activeStockNations": [
+			"ridnez",
+			"the very dark place",
+			"minelegotia and equestria",
+			"minelegotipony",
+			"salcanceacy",
+			"deman kalan",
+			"jocospor",
+			"new daul eryx",
+			"fetra",
+			"aeioux",
+			"the dixie confederate union",
+			"golden impirial utopia"
+		],
+		"stockData": [
+			{
+				"name": "ADM", 
+				"StockPrice": 239.6030064,
+				"nation": "ridnez",
+				"NS_Stat": -6.00,
+				"CensusID": 10,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			},
+			{
+				"name": "ASM",
+				"StockPrice": 1.530403995,
+				"nation": "ridnez",
+				"NS_Stat": 30839.48,
+				"CensusID": 16,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			},
+			{
+				"name": "ERD",
+				"StockPrice": 3.371783059,
+				"NS_Stat": 6383.84,
+				"nation": "ridnez",
+				"EcoStat": 100.03,
+				"CensusID": 22,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			},
+			{
+				"name": "MVS",
+				"StockPrice": 0.987759439,	
+				"nation": "ridnez",
+				"NS_Stat": 15005.97,
+				"CensusID": 13,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "RBF",
+				"StockPrice": 1.000854887,	
+				"nation": "ridnez",
+				"NS_Stat": 11799.47,
+				"CensusID": 17,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "SEF",
+				"StockPrice": 0.9924836848,	
+				"nation": "ridnez",
+				"NS_Stat": 3822.43,
+				"CensusID": 19,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "CDI",
+				"StockPrice": 1.010359626,	
+				"nation": "the very dark place",
+				"NS_Stat": 82431.21,
+				"EcoStat": 100.46,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "LCB",
+				"StockPrice": 1.510366676,	
+				"nation": "the very dark place",
+				"NS_Stat": 89803.92,
+				"CensusID": 16,
+				"EcoStat": 100.46,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "MOI",
+				"StockPrice": 0.9813126189,	
+				"nation": "the very dark place",
+				"NS_Stat": 46682.73,
+				"CensusID": 26,
+				"EcoStat": 100.46,
+				"AI": false,
+				"TotalShares": 500,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "RHZ",
+				"StockPrice": 1.020430158,	
+				"nation": "the very dark place",
+				"NS_Stat": 10152.04,
+				"CensusID": 22,
+				"EcoStat": 100.46,
+				"AI": false,
+				"TotalShares": 750,
+				"AvaShares": 0
+			},
+			{
+				"name": "WEL",
+				"StockPrice": 1.020345566,	
+				"nation": "the very dark place",
+				"NS_Stat": 42272.41,
+				"CensusID": 23,
+				"EcoStat": 100.46,
+				"AI": false,
+				"TotalShares": 2000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "CIT",
+				"StockPrice": 0.9804527113,	
+				"nation": "minelegotia and equestria",
+				"NS_Stat": 81917.23,
+				"CensusID": 13,
+				"EcoStat": 100.35,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "TSS",
+				"StockPrice": 1.010441452,	
+				"nation": "minelegotipony",
+				"NS_Stat": 45945.18,
+				"CensusID": 26,
+				"EcoStat": 100.35,
+				"AI": false,
+				"TotalShares": 8000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "CMS",
+				"StockPrice": 17.00658227,	
+				"nation": "salcanceacy",
+				"NS_Stat": 48830.98,
+				"CensusID": 16,
+				"EcoStat": 100.3,
+				"AI": false,
+				"TotalShares": 354,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "CMS",
+				"StockPrice": 0.0100035097,	
+				"nation": "salcanceacy",
+				"NS_Stat": 3991.53,
+				"CensusID": 20,
+				"EcoStat": 100.3,
+				"AI": false,
+				"TotalShares": 200600,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "HCE",
+				"StockPrice": 0.5002513307,	
+				"nation": "salcanceacy",
+				"NS_Stat": 6804.26,
+				"CensusID": 11,
+				"EcoStat": 100.3,
+				"AI": false,
+				"TotalShares": 4012,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "DKA",
+				"StockPrice": 2.022318051,	
+				"nation": "deman kalan",
+				"NS_Stat": 81220.84,
+				"CensusID": 16,
+				"EcoStat": 96.72,
+				"AI": false,
+				"TotalShares": 1600,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "EMG",
+				"StockPrice": 0.08603035949,	
+				"nation": "jocospor",
+				"NS_Stat": 12128.35,
+				"CensusID": 20,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 119412,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "IMI",
+				"StockPrice": 0.02630928436,	
+				"nation": "jocospor",
+				"NS_Stat": 12128.35,
+				"CensusID": 20,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 1000,
+				"AvaShares": 298530
+			}, 
+			{
+				"name": "MCL",
+				"StockPrice": 0.1600567784,	
+				"nation": "jocospor",
+				"NS_Stat": -11.09,
+				"CensusID": 18,
+				"EcoStat": 100.03,
+				"AI": false,
+				"TotalShares": 69567,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "ERX",
+				"StockPrice": 10.33136813,
+				"nation": "new daul eryx",
+				"NS_Stat": 18295.22,
+				"CensusID": 16,
+				"EcoStat": 100.01,
+				"AI": false,
+				"TotalShares": 970,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "GAM",
+				"StockPrice": 10.13724221,
+				"nation": "golden impirial utopia",
+				"NS_Stat": 86517.55,
+				"CensusID": 16,
+				"EcoStat": 100.48,
+				"AI": false,
+				"TotalShares": 350,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "IAS",
+				"StockPrice": 9.820103632,
+				"nation": "golden impirial utopia",
+				"NS_Stat": 65056.75,
+				"CensusID": 13,
+				"EcoStat": 100.48,
+				"AI": false,
+				"TotalShares": 300,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "UGP",
+				"StockPrice": 10.11493603,
+				"nation": "golden impirial utopia",
+				"NS_Stat": 86517.55,
+				"CensusID": 26,
+				"EcoStat": 100.48,
+				"AI": false,
+				"TotalShares": 350,
+				"AvaShares": 300
+			}, 
+			{
+				"name": "WAI",
+				"StockPrice": 4.048400691,
+				"nation": "the dixie confederate union",
+				"NS_Stat": 99007.42,
+				"CensusID": 16,
+				"EcoStat": 100.27,
+				"AI": false,
+				"TotalShares": 2500,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "CBC",
+				"StockPrice": 10.01304913,
+				"nation": "AI",
+				"NS_Stat": 2509.25,
+				"CensusID": 11,
+				"EcoStat": 84.19304527,
+				"AI": true,
+				"TotalShares": 2000,
+				"AvaShares": 2000
+			}, 
+			{
+				"name": "LCT",
+				"StockPrice": 0.5008425728,
+				"nation": "AI",
+				"NS_Stat": 2419.25,
+				"CensusID": 11,
+				"EcoStat": 82.19304527,
+				"AI": true,
+				"TotalShares": 60000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "EKC",
+				"StockPrice": 5.008093404,
+				"nation": "AI",
+				"NS_Stat": 2464.25,
+				"CensusID": 11,
+				"EcoStat": 84.19304527,
+				"AI": true,
+				"TotalShares": 2000,
+				"AvaShares": 280
+			}, 
+			{
+				"name": "GMC",
+				"StockPrice": 2.487805795,
+				"nation": "AI",
+				"NS_Stat": 2413.25,
+				"CensusID": 20,
+				"EcoStat": 83.19304527,
+				"AI": true,
+				"TotalShares": 2000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "BSF",
+				"StockPrice": 10.00562951,
+				"nation": "AI",
+				"NS_Stat": 2474.25,
+				"CensusID": 15,
+				"EcoStat": 81.19304527,
+				"AI": true,
+				"TotalShares": 1000,
+				"AvaShares": 800
+			}, 
+			{
+				"name": "PTL",
+				"StockPrice": 0.009993031911,
+				"nation": "AI",
+				"NS_Stat": 2474.25,
+				"CensusID": 22,
+				"EcoStat": 80.19304527,
+				"AI": true,
+				"TotalShares": 300000,
+				"AvaShares": 100000
+			}, 
+			{
+				"name": "CFP",
+				"StockPrice": 2.991851513,
+				"nation": "AI",
+				"NS_Stat": 2462.25,
+				"CensusID": 24,
+				"EcoStat": 81.19304527,
+				"AI": true,
+				"TotalShares": 2000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "WLC",
+				"StockPrice": 9.961586092,
+				"nation": "AI",
+				"NS_Stat": 2477.25,
+				"CensusID": 19,
+				"EcoStat": 82.19304527,
+				"AI": true,
+				"TotalShares": 3000,
+				"AvaShares": 3000
+			}, 
+			{
+				"name": "LLG",
+				"StockPrice": 0.9997618501,
+				"nation": "AI",
+				"NS_Stat": 2484.25,
+				"CensusID": 21,
+				"EcoStat": 81.19304527,
+				"AI": true,
+				"TotalShares": 20000,
+				"AvaShares": 15000
+			}, 
+			{
+				"name": "RCI",
+				"StockPrice": 0.4979511931,
+				"nation": "AI",
+				"NS_Stat": 2476.25,
+				"CensusID": 23,
+				"EcoStat": 82.19304527,
+				"AI": true,
+				"TotalShares": 10000,
+				"AvaShares": 7990
+			}, 
+			{
+				"name": "AAA",
+				"StockPrice": 0.03000206688,
+				"nation": "aeioux",
+				"NS_Stat": 34052.25,
+				"CensusID": 13,
+				"EcoStat": 100.01,
+				"AI": false,
+				"TotalShares": 100000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "ZZZ",
+				"StockPrice": 0.01999976798,
+				"nation": "aeioux",
+				"NS_Stat": 5380.26,
+				"CensusID": 21,
+				"EcoStat": 100.01,
+				"AI": false,
+				"TotalShares": 100000,
+				"AvaShares": 0
+			}, 
+			{
+				"name": "QUE",
+				"StockPrice": 0.01999976684,
+				"nation": "aeioux",
+				"NS_Stat": 1688.08,
+				"CensusID": 24,
+				"EcoStat": 100.01,
+				"AI": false,
+				"TotalShares": 100000,
+				"AvaShares": 97700
+			}, 
+			{
+				"name": "HLA",
+				"StockPrice": 0.0199998462,
+				"nation": "aeioux",
+				"NS_Stat": 20930.78,
+				"CensusID": 16,
+				"EcoStat": 100.01,
+				"AI": false,
+				"TotalShares": 100000,
+				"AvaShares": 8000
+			}, 
+			{
+				"name": "FAC",
+				"StockPrice": 40.08309187,
+				"nation": "fetra",
+				"NS_Stat": 14947.72,
+				"CensusID": 10,
+				"EcoStat": 100.19,
+				"AI": false,
+				"TotalShares": 100,
+				"AvaShares": 100
+			}, 
+			{
+				"name": "VMT",
+				"StockPrice": 8.006296057,
+				"nation": "fetra",
+				"NS_Stat": 48373.74,
+				"CensusID": 16,
+				"EcoStat": 100.19,
+				"AI": false,
+				"TotalShares": 500,
+				"AvaShares": 500
+			} 
+		]
+
+		
+
+	}
+]
+

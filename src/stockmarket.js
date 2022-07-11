@@ -14,7 +14,7 @@ const nde = require('./const/nations');
 const giu = require('./const/nations');
 const dix = require('./const/nations');
 const fet = require('./const/nations');
-const { throws } = require('assert');
+const {format, subDays, parse, differenceInDays, addDays} = require('date-fns')
 
 //This is specific to Stock Market - Collects Regional Economic Rating, Each Nation's Economic Rating and Each Stock's Industry's Stat
 //@TODO: Make a base query method with a delaying mechanism. 
@@ -24,10 +24,11 @@ let DataCollected = [];
 let FilteredNations = [];
 let FilteredNationsData = [];
 
-function NationData(nation, log, time, stat) {
+function NationData(nation, log, time, id, stat) {
   this.nationName = nation;
   this.savedlog = log;
   this.timeused = time;
+  this.censusid = id;
   this.data = stat;
 };
 
@@ -90,6 +91,7 @@ const backgrounddata = async () => {
     sleep(delay*4);
     console.log(`Serving request ${j}`);
     console.log(`Nation: ${FilteredNations[j]}`);
+    sleep(delay*4);
     let ecodata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=1;mode=score`);
     let ecooutputdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=76;mode=score`);
     let employdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=56;mode=score`);
@@ -153,7 +155,7 @@ const stockmarketfunc = async () => {
       let SecondDate = Number(new Date());
       console.log(`Finished Serving Query at ${new Date()}`);
       let timechanged = SecondDate - FirstDate;
-      const newNationData = new NationData(nationCensusId[i][0], Querylog, timechanged, processedData);
+      const newNationData = new NationData(nationCensusId[i][0], Querylog, timechanged, Number(nationCensusId[i][j]), Number(processedData));
       DataCollected.push(newNationData);
     }
   }
@@ -161,7 +163,7 @@ const stockmarketfunc = async () => {
   console.log(DataCollected);
   console.log(`Stock Done!`);
 
-  fs.writeFile(`./cache/StockMarket-${new Date()}.json`, JSON.stringify(DataCollected), (err) => {
+  fs.writeFile(`./cache/StockMarket-${format(new Date(), "yyyy-M-dd")}.json`, JSON.stringify(DataCollected), (err) => {
     // In case of a error throw err.
     if (err) throw err});
 
