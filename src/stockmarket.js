@@ -15,6 +15,7 @@ const giu = require('./const/nations');
 const dix = require('./const/nations');
 const fet = require('./const/nations');
 const {format, subDays, parse, differenceInDays, addDays} = require('date-fns')
+let stockPrice = JSON.parse(fs.readFileSync('./src/const/stockprice.json', 'utf8'));
 
 //This is specific to Stock Market - Collects Regional Economic Rating, Each Nation's Economic Rating and Each Stock's Industry's Stat
 //@TODO: Make a base query method with a delaying mechanism. 
@@ -122,7 +123,7 @@ const backgrounddata = async () => {
   let data4 = CCDTaxTotal/FilternationsAmount;
   let data5 = CCDSciTotal/FilternationsAmount;
   const CCDAverageData = new RegionAverageData(
-    new Date(),
+    format(new Date(), "yyyy-M-dd"),
     data1, data2, data3, data4, data5 
   )
   console.log(CCDAverageData);
@@ -167,7 +168,12 @@ const stockmarketfunc = async () => {
     // In case of a error throw err.
     if (err) throw err});
 
+  console.log(stockPrice);
+  
+
 }
+
+
 
 stockmarketfunc();
 
