@@ -17,6 +17,8 @@ const fet = require('./const/nations');
 const {format, subDays, parse, differenceInDays, addDays} = require('date-fns')
 let stockPrice = JSON.parse(fs.readFileSync('./src/const/stockprice.json', 'utf8'));
 
+
+
 //This is specific to Stock Market - Collects Regional Economic Rating, Each Nation's Economic Rating and Each Stock's Industry's Stat
 //@TODO: Make a base query method with a delaying mechanism. 
 //console.log(nationNameList[0]);
@@ -164,12 +166,21 @@ const stockmarketfunc = async () => {
   console.log(DataCollected);
   console.log(`Stock Done!`);
 
-  fs.writeFile(`./cache/StockMarket-${format(new Date(), "yyyy-M-dd")}.json`, JSON.stringify(DataCollected), (err) => {
+  stockPrice.push(DataCollected);
+  fs.writeFile('./src/const/stockprice.json', JSON.stringify(stockPrice), (err) => {
+    if (err) throw err});
+
+  fs.writeFile(`./cache/StockMarketBackGroundData.json`, JSON.stringify(DataCollected), (err) => {
     // In case of a error throw err.
     if (err) throw err});
 
-  console.log(stockPrice);
-  
+
+    console.log(stockPrice);
+    let a = stockPrice.length - 1;
+    console.log(a)
+    console.log(stockPrice[1])
+    console.log(stockPrice[0].stockData);
+
 
 }
 
