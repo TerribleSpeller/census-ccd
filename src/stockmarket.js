@@ -2,20 +2,9 @@ const CensusScale = require('./const/census');
 const {nationCensusId} = require('./const/nations');
 const axios = require('axios');
 const fs = require('fs');
-const minelegotipony = require('./const/nations');
-const aeioux = require('./const/nations');
-const minelegotiaandequestria = require('./const/nations');
-const ridnez = require('./const/nations');
-const tdvp = require('./const/nations');
-const sal = require('./const/nations');
-const deman = require('./const/nations');
-const joco = require('./const/nations');
-const nde = require('./const/nations');
-const giu = require('./const/nations');
-const dix = require('./const/nations');
-const fet = require('./const/nations');
 const {format, subDays, parse, differenceInDays, addDays} = require('date-fns')
 let stockPrice = JSON.parse(fs.readFileSync('./src/const/stockprice.json', 'utf8'));
+let BGData = JSON.parse(fs.readFileSync('./src/const/StockMarketBackGroundData.json', 'utf8'))
 
 
 
@@ -66,7 +55,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let delay = 500;
+let delay = 1000;
 
 const backgrounddata = async () => {
   let nationList = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?region=confederation_of_corrupt_dictators&q=nations`);
@@ -166,21 +155,15 @@ const stockmarketfunc = async () => {
   console.log(DataCollected);
   console.log(`Stock Done!`);
 
-  stockPrice.push(DataCollected);
-  fs.writeFile('./src/const/stockprice.json', JSON.stringify(stockPrice), (err) => {
-    if (err) throw err});
+  //stockPrice.push(DataCollected);
+  //fs.writeFile('./src/const/stockprice.json', JSON.stringify(stockPrice), (err) => {
+    //if (err) throw err});
+  
+  BGData.push(DataCollected)
 
-  fs.writeFile(`./cache/StockMarketBackGroundData.json`, JSON.stringify(DataCollected), (err) => {
+  fs.writeFile(`./src/const/StockMarketBackGroundData.json`, JSON.stringify(BGData), (err) => {
     // In case of a error throw err.
     if (err) throw err});
-
-
-    console.log(stockPrice);
-    let a = stockPrice.length - 1;
-    console.log(a)
-    console.log(stockPrice[1])
-    console.log(stockPrice[0].stockData);
-
 
 }
 
