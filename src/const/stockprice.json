@@ -26,7 +26,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 1
             },
             {
                 "stockName": "ASM",
@@ -37,7 +38,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 2
             },
             {
                 "stockName": "ERD",
@@ -48,7 +50,8 @@
                 "censusid": 22,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 3
             },
             {
                 "stockName": "MVS",
@@ -59,7 +62,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 4
             },
             {
                 "stockName": "RBF",
@@ -70,7 +74,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 5
             },
             {
                 "stockName": "SEF",
@@ -81,7 +86,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 6
             },
             {
                 "stockName": "CDI",
@@ -91,7 +97,8 @@
                 "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 7
             },
             {
                 "stockName": "LCB",
@@ -102,7 +109,8 @@
                 "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 8
             },
             {
                 "stockName": "MOI",
@@ -113,7 +121,8 @@
                 "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 500,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 9
             },
             {
                 "stockName": "RHZ",
@@ -124,7 +133,8 @@
                 "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 750,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 10
             },
             {
                 "stockName": "WEL",
@@ -135,7 +145,8 @@
                 "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 2000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 11
             },
             {
                 "stockName": "CIT",
@@ -146,7 +157,8 @@
                 "EcoStat": 100.35,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 12
             },
             {
                 "stockName": "TSS",
@@ -157,7 +169,8 @@
                 "EcoStat": 100.35,
                 "AI": false,
                 "TotalShares": 8000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 13
             },
             {
                 "stockName": "CMS",
@@ -168,7 +181,8 @@
                 "EcoStat": 100.3,
                 "AI": false,
                 "TotalShares": 354,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 14
             },
             {
                 "stockName": "CMS",
@@ -179,7 +193,8 @@
                 "EcoStat": 100.3,
                 "AI": false,
                 "TotalShares": 200600,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 15
             },
             {
                 "stockName": "HCE",
@@ -190,7 +205,8 @@
                 "EcoStat": 100.3,
                 "AI": false,
                 "TotalShares": 4012,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 16
             },
             {
                 "stockName": "DKA",
@@ -201,7 +217,8 @@
                 "EcoStat": 96.72,
                 "AI": false,
                 "TotalShares": 1600,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 17
             },
             {
                 "stockName": "EMG",
@@ -212,7 +229,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 119412,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 18
             },
             {
                 "stockName": "IMI",
@@ -223,7 +241,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 298530
+                "AvaShares": 298530,
+                "internalID": 19
             },
             {
                 "stockName": "MCL",
@@ -234,7 +253,8 @@
                 "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 69567,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 20
             },
             {
                 "stockName": "ERX",
@@ -245,7 +265,8 @@
                 "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 970,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 21
             },
             {
                 "stockName": "GAM",
@@ -256,7 +277,8 @@
                 "EcoStat": 100.48,
                 "AI": false,
                 "TotalShares": 350,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 22
             },
             {
                 "stockName": "IAS",
@@ -267,7 +289,8 @@
                 "EcoStat": 100.48,
                 "AI": false,
                 "TotalShares": 300,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 23
             },
             {
                 "stockName": "UGP",
@@ -278,7 +301,8 @@
                 "EcoStat": 100.48,
                 "AI": false,
                 "TotalShares": 350,
-                "AvaShares": 300
+                "AvaShares": 300,
+                "internalID": 24
             },
             {
                 "stockName": "WAI",
@@ -289,7 +313,8 @@
                 "EcoStat": 100.27,
                 "AI": false,
                 "TotalShares": 2500,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 25
             },
             {
                 "stockName": "CBC",
@@ -300,7 +325,8 @@
                 "EcoStat": 84.19304527,
                 "AI": true,
                 "TotalShares": 2000,
-                "AvaShares": 2000
+                "AvaShares": 2000,
+                "internalID": 26
             },
             {
                 "stockName": "LCT",
@@ -311,7 +337,8 @@
                 "EcoStat": 82.19304527,
                 "AI": true,
                 "TotalShares": 60000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 27
             },
             {
                 "stockName": "EKC",
@@ -322,7 +349,8 @@
                 "EcoStat": 84.19304527,
                 "AI": true,
                 "TotalShares": 2000,
-                "AvaShares": 280
+                "AvaShares": 280,
+                "internalID": 28
             },
             {
                 "stockName": "GMC",
@@ -333,7 +361,8 @@
                 "EcoStat": 83.19304527,
                 "AI": true,
                 "TotalShares": 2000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 29
             },
             {
                 "stockName": "BSF",
@@ -344,7 +373,8 @@
                 "EcoStat": 81.19304527,
                 "AI": true,
                 "TotalShares": 1000,
-                "AvaShares": 800
+                "AvaShares": 800,
+                "internalID": 30
             },
             {
                 "stockName": "PTL",
@@ -355,7 +385,8 @@
                 "EcoStat": 80.19304527,
                 "AI": true,
                 "TotalShares": 300000,
-                "AvaShares": 100000
+                "AvaShares": 100000,
+                "internalID": 31
             },
             {
                 "stockName": "CFP",
@@ -366,7 +397,8 @@
                 "EcoStat": 81.19304527,
                 "AI": true,
                 "TotalShares": 2000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 32
             },
             {
                 "stockName": "WLC",
@@ -377,7 +409,8 @@
                 "EcoStat": 82.19304527,
                 "AI": true,
                 "TotalShares": 3000,
-                "AvaShares": 3000
+                "AvaShares": 3000,
+                "internalID": 33
             },
             {
                 "stockName": "LLG",
@@ -388,7 +421,8 @@
                 "EcoStat": 81.19304527,
                 "AI": true,
                 "TotalShares": 20000,
-                "AvaShares": 15000
+                "AvaShares": 15000,
+                "internalID": 34
             },
             {
                 "stockName": "RCI",
@@ -399,7 +433,8 @@
                 "EcoStat": 82.19304527,
                 "AI": true,
                 "TotalShares": 10000,
-                "AvaShares": 7990
+                "AvaShares": 7990,
+                "internalID": 35
             },
             {
                 "stockName": "AAA",
@@ -410,7 +445,8 @@
                 "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 36
             },
             {
                 "stockName": "ZZZ",
@@ -421,7 +457,8 @@
                 "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 37
             },
             {
                 "stockName": "QUE",
@@ -432,7 +469,8 @@
                 "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 97700
+                "AvaShares": 97700,
+                "internalID": 38
             },
             {
                 "stockName": "HLA",
@@ -443,7 +481,8 @@
                 "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 8000
+                "AvaShares": 8000,
+                "internalID": 39
             },
             {
                 "stockName": "FAC",
@@ -454,7 +493,8 @@
                 "EcoStat": 100.19,
                 "AI": false,
                 "TotalShares": 100,
-                "AvaShares": 100
+                "AvaShares": 100,
+                "internalID": 40
             },
             {
                 "stockName": "VMT",
@@ -465,12 +505,13 @@
                 "EcoStat": 100.19,
                 "AI": false,
                 "TotalShares": 500,
-                "AvaShares": 500
+                "AvaShares": 500,
+                "internalID": 41
             }
         ]
     },
     {
-        "date": "2022-8-06",
+        "date": "2022-8-07",
         "RegionEcoStat": 81.12464000000006,
         "activeStockNations": [
             "ridnez",
@@ -493,10 +534,11 @@
                 "nation": "ridnez",
                 "NS_Stat": -6.48,
                 "censusid": 10,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 1
             },
             {
                 "stockName": "ASM",
@@ -504,10 +546,11 @@
                 "nation": "ridnez",
                 "NS_Stat": 34088.4,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 2
             },
             {
                 "stockName": "ERD",
@@ -515,10 +558,11 @@
                 "nation": "ridnez",
                 "NS_Stat": 6626.17,
                 "censusid": 22,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 3
             },
             {
                 "stockName": "MVS",
@@ -526,10 +570,11 @@
                 "nation": "ridnez",
                 "NS_Stat": 15215.95,
                 "censusid": 13,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 4
             },
             {
                 "stockName": "RBF",
@@ -537,10 +582,11 @@
                 "nation": "ridnez",
                 "NS_Stat": 11325.5,
                 "censusid": 17,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 5
             },
             {
                 "stockName": "SEF",
@@ -548,10 +594,11 @@
                 "nation": "ridnez",
                 "NS_Stat": 4808.01,
                 "censusid": 19,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 6
             },
             {
                 "stockName": "LCB",
@@ -559,10 +606,11 @@
                 "nation": "the very dark place",
                 "NS_Stat": 84416.86,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 8
             },
             {
                 "stockName": "MOI",
@@ -570,10 +618,11 @@
                 "nation": "the very dark place",
                 "NS_Stat": 91750.62,
                 "censusid": 26,
-                "EcoStat": 1,
+                "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 500,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 9
             },
             {
                 "stockName": "RHZ",
@@ -581,10 +630,11 @@
                 "nation": "the very dark place",
                 "NS_Stat": 10098.4,
                 "censusid": 22,
-                "EcoStat": 1,
+                "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 750,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 10
             },
             {
                 "stockName": "WEL",
@@ -592,10 +642,11 @@
                 "nation": "the very dark place",
                 "NS_Stat": 42049.09,
                 "censusid": 23,
-                "EcoStat": 1,
+                "EcoStat": 100.46,
                 "AI": false,
                 "TotalShares": 2000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 11
             },
             {
                 "stockName": "CIT",
@@ -603,10 +654,11 @@
                 "nation": "minelegotia and equestria",
                 "NS_Stat": 82450.77,
                 "censusid": 13,
-                "EcoStat": 1,
+                "EcoStat": 101.34,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 12
             },
             {
                 "stockName": "TSS",
@@ -614,10 +666,11 @@
                 "nation": "minelegotipony",
                 "NS_Stat": 45761.27,
                 "censusid": 26,
-                "EcoStat": 1,
+                "EcoStat": 100.35,
                 "AI": false,
                 "TotalShares": 8000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 13
             },
             {
                 "stockName": "CMS",
@@ -625,10 +678,11 @@
                 "nation": "salcanceacy",
                 "NS_Stat": 48696.88,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.3,
                 "AI": false,
                 "TotalShares": 354,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 14
             },
             {
                 "stockName": "CMS",
@@ -636,10 +690,11 @@
                 "nation": "salcanceacy",
                 "NS_Stat": 3965.42,
                 "censusid": 20,
-                "EcoStat": 1,
+                "EcoStat": 100.3,
                 "AI": false,
                 "TotalShares": 200600,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 15
             },
             {
                 "stockName": "HCE",
@@ -647,10 +702,11 @@
                 "nation": "salcanceacy",
                 "NS_Stat": 6759.75,
                 "censusid": 11,
-                "EcoStat": 1,
+                "EcoStat": 100.3,
                 "AI": false,
                 "TotalShares": 4012,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 16
             },
             {
                 "stockName": "DKA",
@@ -658,10 +714,11 @@
                 "nation": "deman kalan",
                 "NS_Stat": 82123.62,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 96.74,
                 "AI": false,
                 "TotalShares": 1600,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 17
             },
             {
                 "stockName": "EMG",
@@ -669,10 +726,11 @@
                 "nation": "jocospor",
                 "NS_Stat": 12018.31,
                 "censusid": 20,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 119412,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 18
             },
             {
                 "stockName": "IMI",
@@ -680,10 +738,11 @@
                 "nation": "jocospor",
                 "NS_Stat": 12018.31,
                 "censusid": 20,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 1000,
-                "AvaShares": 298530
+                "AvaShares": 298530,
+                "internalID": 19
             },
             {
                 "stockName": "MCL",
@@ -691,10 +750,11 @@
                 "nation": "jocospor",
                 "NS_Stat": -11.09,
                 "censusid": 18,
-                "EcoStat": 1,
+                "EcoStat": 100.03,
                 "AI": false,
                 "TotalShares": 69567,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 20
             },
             {
                 "stockName": "ERX",
@@ -702,10 +762,11 @@
                 "nation": "new daul eryx",
                 "NS_Stat": 18472.37,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 970,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 21
             },
             {
                 "stockName": "GAM",
@@ -713,10 +774,11 @@
                 "nation": "golden impirial utopia",
                 "NS_Stat": 86308.95,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.48,
                 "AI": false,
                 "TotalShares": 350,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 22
             },
             {
                 "stockName": "IAS",
@@ -724,10 +786,11 @@
                 "nation": "golden impirial utopia",
                 "NS_Stat": 64909.38,
                 "censusid": 13,
-                "EcoStat": 1,
+                "EcoStat": 100.48,
                 "AI": false,
                 "TotalShares": 300,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 23
             },
             {
                 "stockName": "UGP",
@@ -735,10 +798,11 @@
                 "nation": "golden impirial utopia",
                 "NS_Stat": 86308.95,
                 "censusid": 26,
-                "EcoStat": 1,
+                "EcoStat": 100.48,
                 "AI": false,
                 "TotalShares": 350,
-                "AvaShares": 300
+                "AvaShares": 300,
+                "internalID": 24
             },
             {
                 "stockName": "WAI",
@@ -746,10 +810,131 @@
                 "nation": "the dixie confederate union",
                 "NS_Stat": 105055.35,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.28,
                 "AI": false,
                 "TotalShares": 2500,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 25
+            },
+            {
+                "stockName": "CBC",
+                "stockPrice": 11.924713696409134,
+                "nation": "AI",
+                "NS_Stat": 2591.007028824597,
+                "censusid": 11,
+                "EcoStat": 83.39370754688255,
+                "AI": true,
+                "TotalShares": 2000,
+                "AvaShares": 2000,
+                "internalID": 26
+            },
+            {
+                "stockName": "LCT",
+                "stockPrice": 2.6309685694430636,
+                "nation": "AI",
+                "NS_Stat": 2515.0316897612042,
+                "censusid": 11,
+                "EcoStat": 87.30444859027534,
+                "AI": true,
+                "TotalShares": 60000,
+                "AvaShares": 0,
+                "internalID": 27
+            },
+            {
+                "stockName": "EKC",
+                "stockPrice": 6.226251533752497,
+                "nation": "AI",
+                "NS_Stat": 2481.575818460758,
+                "censusid": 11,
+                "EcoStat": 80.93399089597018,
+                "AI": true,
+                "TotalShares": 2000,
+                "AvaShares": 280,
+                "internalID": 28
+            },
+            {
+                "stockName": "GMC",
+                "stockPrice": 3.7669038468978275,
+                "nation": "AI",
+                "NS_Stat": 2433.895698726257,
+                "censusid": 20,
+                "EcoStat": 82.3210468704873,
+                "AI": true,
+                "TotalShares": 2000,
+                "AvaShares": 0,
+                "internalID": 29
+            },
+            {
+                "stockName": "BSF",
+                "stockPrice": 11.106281403676165,
+                "nation": "AI",
+                "NS_Stat": 2481.279853791879,
+                "censusid": 15,
+                "EcoStat": 80.20666142659323,
+                "AI": true,
+                "TotalShares": 1000,
+                "AvaShares": 800,
+                "internalID": 30
+            },
+            {
+                "stockName": "PTL",
+                "stockPrice": 1.3550925554958588,
+                "nation": "AI",
+                "NS_Stat": 2500.803910958411,
+                "censusid": 22,
+                "EcoStat": 82.66701433876169,
+                "AI": true,
+                "TotalShares": 300000,
+                "AvaShares": 100000,
+                "internalID": 31
+            },
+            {
+                "stockName": "CFP",
+                "stockPrice": 5.047318085656638,
+                "nation": "AI",
+                "NS_Stat": 2558.3979786162454,
+                "censusid": 24,
+                "EcoStat": 83.38833296343353,
+                "AI": true,
+                "TotalShares": 2000,
+                "AvaShares": 0,
+                "internalID": 32
+            },
+            {
+                "stockName": "WLC",
+                "stockPrice": 11.691605534239281,
+                "nation": "AI",
+                "NS_Stat": 2533.339197938787,
+                "censusid": 19,
+                "EcoStat": 87.14536678129502,
+                "AI": true,
+                "TotalShares": 3000,
+                "AvaShares": 3000,
+                "internalID": 33
+            },
+            {
+                "stockName": "LLG",
+                "stockPrice": 2.4476691001401276,
+                "nation": "AI",
+                "NS_Stat": 2523.5976036313577,
+                "censusid": 21,
+                "EcoStat": 81.41055432505198,
+                "AI": true,
+                "TotalShares": 20000,
+                "AvaShares": 15000,
+                "internalID": 34
+            },
+            {
+                "stockName": "RCI",
+                "stockPrice": 2.240666662827287,
+                "nation": "AI",
+                "NS_Stat": 2549.4336186731616,
+                "censusid": 23,
+                "EcoStat": 79.23295778850797,
+                "AI": true,
+                "TotalShares": 10000,
+                "AvaShares": 7990,
+                "internalID": 35
             },
             {
                 "stockName": "AAA",
@@ -757,10 +942,11 @@
                 "nation": "aeioux",
                 "NS_Stat": 34207.37,
                 "censusid": 13,
-                "EcoStat": 1,
+                "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 36
             },
             {
                 "stockName": "ZZZ",
@@ -768,10 +954,11 @@
                 "nation": "aeioux",
                 "NS_Stat": 5376.09,
                 "censusid": 21,
-                "EcoStat": 1,
+                "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 0
+                "AvaShares": 0,
+                "internalID": 37
             },
             {
                 "stockName": "QUE",
@@ -779,10 +966,11 @@
                 "nation": "aeioux",
                 "NS_Stat": 920.06,
                 "censusid": 24,
-                "EcoStat": 1,
+                "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 97700
+                "AvaShares": 97700,
+                "internalID": 38
             },
             {
                 "stockName": "HLA",
@@ -790,10 +978,11 @@
                 "nation": "aeioux",
                 "NS_Stat": 21141.42,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.01,
                 "AI": false,
                 "TotalShares": 100000,
-                "AvaShares": 8000
+                "AvaShares": 8000,
+                "internalID": 39
             },
             {
                 "stockName": "FAC",
@@ -801,10 +990,11 @@
                 "nation": "fetra",
                 "NS_Stat": 14839.69,
                 "censusid": 10,
-                "EcoStat": 1,
+                "EcoStat": 100.2,
                 "AI": false,
                 "TotalShares": 100,
-                "AvaShares": 100
+                "AvaShares": 100,
+                "internalID": 40
             },
             {
                 "stockName": "VMT",
@@ -812,10 +1002,11 @@
                 "nation": "fetra",
                 "NS_Stat": 49088.62,
                 "censusid": 16,
-                "EcoStat": 1,
+                "EcoStat": 100.2,
                 "AI": false,
                 "TotalShares": 500,
-                "AvaShares": 500
+                "AvaShares": 500,
+                "internalID": 41
             }
         ]
     }

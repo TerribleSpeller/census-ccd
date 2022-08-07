@@ -10,7 +10,7 @@ console.log(stockprice[0].date)
 console.log(Backgrounddata.length)
 console.log(Backgrounddata[0][0].serviceTime)*/
 
-function stockDataFormat(name, price, nationName, stat, id, eco, AI, shares, ava) {
+function stockDataFormat(name, price, nationName, stat, id, eco, AI, shares, ava, internalid) {
     this.stockName = name,
     this.stockPrice = price,
     this.nation = nationName,
@@ -20,6 +20,7 @@ function stockDataFormat(name, price, nationName, stat, id, eco, AI, shares, ava
     this.AI = AI,
     this.TotalShares = shares,
     this.AvaShares = ava
+    this.internalID = internalid
 };
 
 function cacheSave(ecostat, activeNations, stockData) {
@@ -64,10 +65,11 @@ const calculation = async () => {
                                     stockprice[0].stockData[i].nation,
                                     Backgrounddata[Backgrounddata.length - 1][j].data,
                                     Backgrounddata[Backgrounddata.length - 1][j].censusid,
-                                    Backgrounddata[Backgrounddata.length - 1][k].censusid,
+                                    Backgrounddata[Backgrounddata.length - 1][k].data,
                                     stockprice[0].stockData[i].AI,
                                     stockprice[0].stockData[i].TotalShares,
-                                    stockprice[0].stockData[i].AvaShares
+                                    stockprice[0].stockData[i].AvaShares,
+                                    stockprice[0].stockData[i].internalID
                                 );
                                 stockDataCache.push(newdata);
 
@@ -77,7 +79,34 @@ const calculation = async () => {
                 } 
             }
         }
+        if (stockprice[0].stockData[i].AI === true) {
+            console.log(`Processing NPC stock now. ${stockprice[0].stockData[i].stockName}, with a Census ID of ${stockprice[0].stockData[i].censusid}`);
+            let arbitaryDiff = (Math.random()*(10 - 0 + 1));
+            let newEcoStat = stockprice[0].RegionEcoStat + arbitaryDiff;
+            console.log(`Economic Deviation of ${arbitaryDiff}`);
+            console.log(`Initial Price of ${stockprice[0].stockData[i].stockName}: ${stockprice[0].stockData[i].StockPrice}`)
+            let arbitaryDiffInd = (Math.random()*(100 - 0 + 1));
+            let newIndustryStat = stockprice[0].stockData[i].NS_Stat + arbitaryDiffInd
+            let changeAI = (2)*(arbitaryDiff) + arbitaryDiffInd + ((Backgrounddata[Backgrounddata.length - 1][0].AverageEcoRating)/(Backgrounddata[Backgrounddata.length - 2][0].AverageEcoRating))
+            console.log(changeAI);
+            let newPrice = (stockprice[0].stockData[i].StockPrice)+((changeAI/100)+1);
+            console.log(`New Price of ${stockprice[0].stockData[i].stockName}: ${newPrice}`);
+            let newdata = new stockDataFormat(
+                stockprice[0].stockData[i].stockName,
+                newPrice,
+                stockprice[0].stockData[i].nation,
+                newIndustryStat,
+                stockprice[0].stockData[i].censusid,
+                newEcoStat,
+                stockprice[0].stockData[i].AI,
+                stockprice[0].stockData[i].TotalShares,
+                stockprice[0].stockData[i].AvaShares,
+                stockprice[0].stockData[i].internalID
+            );
+            stockDataCache.push(newdata)
+        }
     }
+    
 
     let SavedCache = new cacheSave(
         Backgrounddata[Backgrounddata.length - 1][0].AverageEcoRating,
