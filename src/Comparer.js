@@ -1,7 +1,7 @@
 const fs = require('fs');
-let stockprice = JSON.parse(fs.readFileSync('./const/stockprice.json', 'utf8'));
+let stockprice = JSON.parse(fs.readFileSync('./src/const/stockprice.json', 'utf8'));
 const {format, subDays, parse, differenceInDays, addDays} = require('date-fns');
-let Backgrounddata = JSON.parse(fs.readFileSync('./const/StockMarketBackGroundData.json', 'utf8'));
+let Backgrounddata = JSON.parse(fs.readFileSync('./src/const/StockMarketBackGroundData.json', 'utf8'));
 let processingcache = stockprice;
 
 /*
@@ -116,7 +116,7 @@ const calculation = async () => {
 
     processingcache.push(SavedCache)
 
-    fs.writeFile('./const/stockprice.json', JSON.stringify(processingcache), (err) => {
+    fs.writeFile('./src/const/stockprice.json', JSON.stringify(processingcache), (err) => {
     if (err) throw err});
 }
 
@@ -124,6 +124,7 @@ const calculation = async () => {
 
 calculation();
 
+module.exports = { calculation };
 
 
 

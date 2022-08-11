@@ -910,5 +910,309 @@
             "censusid": 16,
             "data": 49088.62
         }
+    ],
+    [
+        {
+            "serviceTime": "2022-8-07",
+            "AverageEcoRating": 81.04544354838715,
+            "AverageGDPRating": 1043099201612903.2,
+            "AverageEmpRating": 57.03270161290324,
+            "AverageTaxRating": 58.33112903225807,
+            "AverageSciRating": 235.11411290322573
+        },
+        {
+            "nationName": "minelegotipony",
+            "savedlog": "Querying: minelegotipony: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=minelegotipony;q=census;scale=1;mode=score",
+            "timeused": 1758,
+            "censusid": 1,
+            "data": 100.35
+        },
+        {
+            "nationName": "minelegotipony",
+            "savedlog": "Querying: minelegotipony: SectorManufacturing(26): https://www.nationstates.net/cgi-bin/api.cgi?nation=minelegotipony;q=census;scale=26;mode=score",
+            "timeused": 1843,
+            "censusid": 26,
+            "data": 45761.27
+        },
+        {
+            "nationName": "aeioux",
+            "savedlog": "Querying: aeioux: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=aeioux;q=census;scale=1;mode=score",
+            "timeused": 1766,
+            "censusid": 1,
+            "data": 100.01
+        },
+        {
+            "nationName": "aeioux",
+            "savedlog": "Querying: aeioux: IndustryInformationTechnology(13): https://www.nationstates.net/cgi-bin/api.cgi?nation=aeioux;q=census;scale=13;mode=score",
+            "timeused": 1725,
+            "censusid": 13,
+            "data": 34207.37
+        },
+        {
+            "nationName": "aeioux",
+            "savedlog": "Querying: aeioux: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=aeioux;q=census;scale=16;mode=score",
+            "timeused": 1782,
+            "censusid": 16,
+            "data": 21141.42
+        },
+        {
+            "nationName": "aeioux",
+            "savedlog": "Querying: aeioux: IndustryInsurance(21): https://www.nationstates.net/cgi-bin/api.cgi?nation=aeioux;q=census;scale=21;mode=score",
+            "timeused": 1896,
+            "censusid": 21,
+            "data": 5376.09
+        },
+        {
+            "nationName": "aeioux",
+            "savedlog": "Querying: aeioux: IndustryBookPublishing(24): https://www.nationstates.net/cgi-bin/api.cgi?nation=aeioux;q=census;scale=24;mode=score",
+            "timeused": 1748,
+            "censusid": 24,
+            "data": 920.06
+        },
+        {
+            "nationName": "minelegotia and equestria",
+            "savedlog": "Querying: minelegotia and equestria: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=minelegotia and equestria;q=census;scale=1;mode=score",
+            "timeused": 1834,
+            "censusid": 1,
+            "data": 101.34
+        },
+        {
+            "nationName": "minelegotia and equestria",
+            "savedlog": "Querying: minelegotia and equestria: IndustryInformationTechnology(13): https://www.nationstates.net/cgi-bin/api.cgi?nation=minelegotia and equestria;q=census;scale=13;mode=score",
+            "timeused": 1745,
+            "censusid": 13,
+            "data": 82444.38
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=1;mode=score",
+            "timeused": 1838,
+            "censusid": 1,
+            "data": 100.03
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: IndustryAutomobileManufacturing(10): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=10;mode=score",
+            "timeused": 1786,
+            "censusid": 10,
+            "data": -6.48
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=16;mode=score",
+            "timeused": 1804,
+            "censusid": 16,
+            "data": 34088.4
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: IndustryFurnitureRestoration(22): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=22;mode=score",
+            "timeused": 1805,
+            "censusid": 22,
+            "data": 6626.17
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: IndustryInformationTechnology(13): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=13;mode=score",
+            "timeused": 1874,
+            "censusid": 13,
+            "data": 15215.95
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: SectorAgriculture(17): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=17;mode=score",
+            "timeused": 1843,
+            "censusid": 17,
+            "data": 11325.5
+        },
+        {
+            "nationName": "ridnez",
+            "savedlog": "Querying: ridnez: IndustryTimberWoodchipping(19): https://www.nationstates.net/cgi-bin/api.cgi?nation=ridnez;q=census;scale=19;mode=score",
+            "timeused": 1743,
+            "censusid": 19,
+            "data": 4808.01
+        },
+        {
+            "nationName": "the very dark place",
+            "savedlog": "Querying: the very dark place: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=the very dark place;q=census;scale=1;mode=score",
+            "timeused": 1838,
+            "censusid": 1,
+            "data": 100.46
+        },
+        {
+            "nationName": "the very dark place",
+            "savedlog": "Querying: the very dark place: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=the very dark place;q=census;scale=16;mode=score",
+            "timeused": 1743,
+            "censusid": 16,
+            "data": 84416.86
+        },
+        {
+            "nationName": "the very dark place",
+            "savedlog": "Querying: the very dark place: SectorManufacturing(26): https://www.nationstates.net/cgi-bin/api.cgi?nation=the very dark place;q=census;scale=26;mode=score",
+            "timeused": 1792,
+            "censusid": 26,
+            "data": 91750.62
+        },
+        {
+            "nationName": "the very dark place",
+            "savedlog": "Querying: the very dark place: IndustryInformationTechnology(13): https://www.nationstates.net/cgi-bin/api.cgi?nation=the very dark place;q=census;scale=13;mode=score",
+            "timeused": 1792,
+            "censusid": 13,
+            "data": 46601.65
+        },
+        {
+            "nationName": "the very dark place",
+            "savedlog": "Querying: the very dark place: IndustryFurnitureRestoration(22): https://www.nationstates.net/cgi-bin/api.cgi?nation=the very dark place;q=census;scale=22;mode=score",
+            "timeused": 1842,
+            "censusid": 22,
+            "data": 10098.4
+        },
+        {
+            "nationName": "the very dark place",
+            "savedlog": "Querying: the very dark place: IndustryRetail(23): https://www.nationstates.net/cgi-bin/api.cgi?nation=the very dark place;q=census;scale=23;mode=score",
+            "timeused": 1803,
+            "censusid": 23,
+            "data": 42049.09
+        },
+        {
+            "nationName": "salcanceacy",
+            "savedlog": "Querying: salcanceacy: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=salcanceacy;q=census;scale=1;mode=score",
+            "timeused": 1780,
+            "censusid": 1,
+            "data": 100.3
+        },
+        {
+            "nationName": "salcanceacy",
+            "savedlog": "Querying: salcanceacy: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=salcanceacy;q=census;scale=16;mode=score",
+            "timeused": 1845,
+            "censusid": 16,
+            "data": 48696.88
+        },
+        {
+            "nationName": "salcanceacy",
+            "savedlog": "Querying: salcanceacy: IndustryMining(20): https://www.nationstates.net/cgi-bin/api.cgi?nation=salcanceacy;q=census;scale=20;mode=score",
+            "timeused": 1944,
+            "censusid": 20,
+            "data": 3965.42
+        },
+        {
+            "nationName": "salcanceacy",
+            "savedlog": "Querying: salcanceacy: IndustryCheeseExports(11): https://www.nationstates.net/cgi-bin/api.cgi?nation=salcanceacy;q=census;scale=11;mode=score",
+            "timeused": 1845,
+            "censusid": 11,
+            "data": 6759.75
+        },
+        {
+            "nationName": "deman kalan",
+            "savedlog": "Querying: deman kalan: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=deman kalan;q=census;scale=1;mode=score",
+            "timeused": 1840,
+            "censusid": 1,
+            "data": 96.74
+        },
+        {
+            "nationName": "deman kalan",
+            "savedlog": "Querying: deman kalan: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=deman kalan;q=census;scale=16;mode=score",
+            "timeused": 1800,
+            "censusid": 16,
+            "data": 82123.62
+        },
+        {
+            "nationName": "jocospor",
+            "savedlog": "Querying: jocospor: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=jocospor;q=census;scale=1;mode=score",
+            "timeused": 1795,
+            "censusid": 1,
+            "data": 100.03
+        },
+        {
+            "nationName": "jocospor",
+            "savedlog": "Querying: jocospor: IndustryMining(20): https://www.nationstates.net/cgi-bin/api.cgi?nation=jocospor;q=census;scale=20;mode=score",
+            "timeused": 1733,
+            "censusid": 20,
+            "data": 12018.31
+        },
+        {
+            "nationName": "jocospor",
+            "savedlog": "Querying: jocospor: IndustryBeverageSales(18): https://www.nationstates.net/cgi-bin/api.cgi?nation=jocospor;q=census;scale=18;mode=score",
+            "timeused": 1840,
+            "censusid": 18,
+            "data": -11.09
+        },
+        {
+            "nationName": "new daul eryx",
+            "savedlog": "Querying: new daul eryx: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=new daul eryx;q=census;scale=1;mode=score",
+            "timeused": 1845,
+            "censusid": 1,
+            "data": 100.01
+        },
+        {
+            "nationName": "new daul eryx",
+            "savedlog": "Querying: new daul eryx: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=new daul eryx;q=census;scale=16;mode=score",
+            "timeused": 1743,
+            "censusid": 16,
+            "data": 18472.37
+        },
+        {
+            "nationName": "golden impirial utopia",
+            "savedlog": "Querying: golden impirial utopia: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=golden impirial utopia;q=census;scale=1;mode=score",
+            "timeused": 1736,
+            "censusid": 1,
+            "data": 100.48
+        },
+        {
+            "nationName": "golden impirial utopia",
+            "savedlog": "Querying: golden impirial utopia: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=golden impirial utopia;q=census;scale=16;mode=score",
+            "timeused": 1843,
+            "censusid": 16,
+            "data": 86308.95
+        },
+        {
+            "nationName": "golden impirial utopia",
+            "savedlog": "Querying: golden impirial utopia: IndustryInformationTechnology(13): https://www.nationstates.net/cgi-bin/api.cgi?nation=golden impirial utopia;q=census;scale=13;mode=score",
+            "timeused": 1741,
+            "censusid": 13,
+            "data": 64909.38
+        },
+        {
+            "nationName": "golden impirial utopia",
+            "savedlog": "Querying: golden impirial utopia: SectorManufacturing(26): https://www.nationstates.net/cgi-bin/api.cgi?nation=golden impirial utopia;q=census;scale=26;mode=score",
+            "timeused": 1744,
+            "censusid": 26,
+            "data": 86308.95
+        },
+        {
+            "nationName": "the dixie confederate union",
+            "savedlog": "Querying: the dixie confederate union: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=the dixie confederate union;q=census;scale=1;mode=score",
+            "timeused": 1838,
+            "censusid": 1,
+            "data": 100.29
+        },
+        {
+            "nationName": "the dixie confederate union",
+            "savedlog": "Querying: the dixie confederate union: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=the dixie confederate union;q=census;scale=16;mode=score",
+            "timeused": 1794,
+            "censusid": 16,
+            "data": 104723.58
+        },
+        {
+            "nationName": "fetra",
+            "savedlog": "Querying: fetra: Economy(1): https://www.nationstates.net/cgi-bin/api.cgi?nation=fetra;q=census;scale=1;mode=score",
+            "timeused": 1893,
+            "censusid": 1,
+            "data": 100.2
+        },
+        {
+            "nationName": "fetra",
+            "savedlog": "Querying: fetra: IndustryAutomobileManufacturing(10): https://www.nationstates.net/cgi-bin/api.cgi?nation=fetra;q=census;scale=10;mode=score",
+            "timeused": 1851,
+            "censusid": 10,
+            "data": 14839.69
+        },
+        {
+            "nationName": "fetra",
+            "savedlog": "Querying: fetra: IndustryArmsManufacturing(16): https://www.nationstates.net/cgi-bin/api.cgi?nation=fetra;q=census;scale=16;mode=score",
+            "timeused": 1793,
+            "censusid": 16,
+            "data": 49088.62
+        }
     ]
 ]
