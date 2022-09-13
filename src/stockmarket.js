@@ -2,19 +2,12 @@ const CensusScale = require('./const/census');
 const {nationCensusId} = require('./const/nations');
 const axios = require('axios');
 const fs = require('fs');
-const minelegotipony = require('./const/nations');
-const aeioux = require('./const/nations');
-const minelegotiaandequestria = require('./const/nations');
-const ridnez = require('./const/nations');
-const tdvp = require('./const/nations');
-const sal = require('./const/nations');
-const deman = require('./const/nations');
-const joco = require('./const/nations');
-const nde = require('./const/nations');
-const giu = require('./const/nations');
-const dix = require('./const/nations');
-const fet = require('./const/nations');
-const {format, subDays, parse, differenceInDays, addDays} = require('date-fns')
+const {format, subDays, parse, differenceInDays, addDays} = require('date-fns');
+let stockPrice = JSON.parse(fs.readFileSync('./src/const/stockprice.json', 'utf8'));
+let BGData = JSON.parse(fs.readFileSync('./src/const/StockMarketBackGroundData.json', 'utf8'));
+const { calculation } = require('./Comparer.js');
+
+
 
 //This is specific to Stock Market - Collects Regional Economic Rating, Each Nation's Economic Rating and Each Stock's Industry's Stat
 //@TODO: Make a base query method with a delaying mechanism. 
@@ -63,7 +56,8 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let delay = 500;
+let delay = 1000;
+let delay2 = 0;
 
 const backgrounddata = async () => {
   let nationList = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?region=confederation_of_corrupt_dictators&q=nations`);
@@ -89,27 +83,32 @@ const backgrounddata = async () => {
   console.log(FilteredNations)
   for (let j = 1; j < FilteredNations.length; j++ ) {
     sleep(delay*4);
+    delay2 += 2000;
+    sleep(delay + delay2);
     console.log(`Serving request ${j}`);
     console.log(`Nation: ${FilteredNations[j]}`);
-    sleep(delay*4);
-    let ecodata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=1;mode=score`);
-    let ecooutputdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=76;mode=score`);
-    let employdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=56;mode=score`);
-    let taxdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=49;mode=score`);
-    let sadata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=70;mode=score`);
-    CCDEcoTotal += Number(ecodata.data.split("\n")[3].split("<")[1].split(">")[1]);
-    CCDGDPTotal += Number(ecooutputdata.data.split("\n")[3].split("<")[1].split(">")[1]);
-    CCDempTotal += Number(employdata.data.split("\n")[3].split("<")[1].split(">")[1]);
-    CCDTaxTotal += Number(taxdata.data.split("\n")[3].split("<")[1].split(">")[1]);
-    CCDSciTotal += Number(sadata.data.split("\n")[3].split("<")[1].split(">")[1]);
+    sleep(5000);
+
+    //Found Issue here. 
+    let dataGathered = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=1+76+56+49+70;mode=score`);
+    //let ecodata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=1;mode=score`);
+    //let ecooutputdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=76;mode=score`);
+    //let employdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=56;mode=score`);
+    //let taxdata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=49;mode=score`);
+    //let sadata = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=70;mode=score`);
+    CCDEcoTotal += Number(dataGathered.data.split("\n")[3].split("<")[1].split(">")[1]);
+    CCDGDPTotal += Number(dataGathered.data.split("\n")[15].split("<")[1].split(">")[1]);
+    CCDempTotal += Number(dataGathered.data.split("\n")[9].split("<")[1].split(">")[1]);
+    CCDTaxTotal += Number(dataGathered.data.split("\n")[6].split("<")[1].split(">")[1]);
+    CCDSciTotal += Number(dataGathered.data.split("\n")[12].split("<")[1].split(">")[1]);
     const newData = new NationBackgroundData(
       FilteredNations[j],
       new Date(),
-      Number(ecodata.data.split("\n")[3].split("<")[1].split(">")[1]),
-      Number(ecooutputdata.data.split("\n")[3].split("<")[1].split(">")[1]),
-      Number(employdata.data.split("\n")[3].split("<")[1].split(">")[1]),
-      Number(taxdata.data.split("\n")[3].split("<")[1].split(">")[1]),
-      Number(sadata.data.split("\n")[3].split("<")[1].split(">")[1])
+      Number(dataGathered.data.split("\n")[3].split("<")[1].split(">")[1]),
+      Number(dataGathered.data.split("\n")[15].split("<")[1].split(">")[1]),
+      Number(dataGathered.data.split("\n")[9].split("<")[1].split(">")[1]),
+      Number(dataGathered.data.split("\n")[6].split("<")[1].split(">")[1]),
+      Number(dataGathered.data.split("\n")[12].split("<")[1].split(">")[1])
       )
     FilteredNationsData.push(newData);
   }
@@ -122,7 +121,7 @@ const backgrounddata = async () => {
   let data4 = CCDTaxTotal/FilternationsAmount;
   let data5 = CCDSciTotal/FilternationsAmount;
   const CCDAverageData = new RegionAverageData(
-    new Date(),
+    format(new Date(), "yyyy-M-dd"),
     data1, data2, data3, data4, data5 
   )
   console.log(CCDAverageData);
@@ -163,12 +162,24 @@ const stockmarketfunc = async () => {
   console.log(DataCollected);
   console.log(`Stock Done!`);
 
-  fs.writeFile(`./cache/StockMarket-${format(new Date(), "yyyy-M-dd")}.json`, JSON.stringify(DataCollected), (err) => {
+  //stockPrice.push(DataCollected);
+  //fs.writeFile('./src/const/stockprice.json', JSON.stringify(stockPrice), (err) => {
+    //if (err) throw err});
+  
+  BGData.push(DataCollected)
+
+  fs.writeFile(`./src/const/StockMarketBackGroundData.json`, JSON.stringify(BGData), (err) => {
     // In case of a error throw err.
     if (err) throw err});
-
+    calculation();
 }
 
-stockmarketfunc();
+const updatedStockFunc = async() => {
+  await stockmarketfunc();
+  console.log(`cringe`);
+}
 
-module.exports = { stockmarketfunc }
+updatedStockFunc();
+
+
+
