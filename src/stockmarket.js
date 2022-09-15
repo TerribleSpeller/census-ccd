@@ -82,8 +82,8 @@ const backgrounddata = async () => {
   }
   console.log(FilteredNations)
   for (let j = 1; j < FilteredNations.length; j++ ) {
-    sleep(delay*4);
-    delay2 += 2000;
+    sleep(10000);
+    delay2 += 5000;
     sleep(delay + delay2);
     console.log(`Serving request ${j}`);
     console.log(`Nation: ${FilteredNations[j]}`);
@@ -126,7 +126,7 @@ const backgrounddata = async () => {
   )
   console.log(CCDAverageData);
 
-  fs.writeFile(`./cache/StockMarket-Background-${new Date()}.json`, JSON.stringify(FilteredNationsData), (err) => {
+  fs.writeFile(`./cache/StockMarket-Background-${format(new Date(), "yyyy-M-dd")}.json`, JSON.stringify(FilteredNationsData), (err) => {
     // In case of a error throw err.
     if (err) throw err});
 
