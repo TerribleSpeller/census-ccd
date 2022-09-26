@@ -80,14 +80,15 @@ const backgrounddata = async () => {
       console.log(e)
     }
   }
+  sleep(50000);
   console.log(FilteredNations)
   for (let j = 1; j < FilteredNations.length; j++ ) {
-    sleep(10000);
-    delay2 += 5000;
-    sleep(delay + delay2);
+    await sleep(2000);
+    delay2 += 1000;
+    await sleep(delay + delay2);
+    console.log(new Date())
     console.log(`Serving request ${j}`);
     console.log(`Nation: ${FilteredNations[j]}`);
-    sleep(5000);
 
     //Found Issue here. 
     let dataGathered = await axios.get(`https://www.nationstates.net/cgi-bin/api.cgi?nation=${FilteredNations[j]};q=census;scale=1+76+56+49+70;mode=score`);
