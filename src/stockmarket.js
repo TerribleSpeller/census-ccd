@@ -84,8 +84,6 @@ const backgrounddata = async () => {
   console.log(FilteredNations)
   for (let j = 1; j < FilteredNations.length; j++ ) {
     await sleep(2000);
-    delay2 += 1000;
-    await sleep(delay + delay2);
     console.log(new Date())
     console.log(`Serving request ${j}`);
     console.log(`Nation: ${FilteredNations[j]}`);
